@@ -3,7 +3,7 @@ import React from "react";
 
 const Callout = () => {
   return (
-    <div className="rounded-2xl max-w-[1300px] mx-4 my-8 md:mx-auto bg-gradient-to-b from-yellow-400 to-orange-400 shadow-xl  py-10  sm:px-12 sm:py-16 lg:flex lg:items-center lg:px-16 lg:py-16">
+    <div className="rounded-2xl max-w-[1300px] mx-4 my-8 md:mx-auto bg-gradient-to-b from-[#08B7F8] to-[#036ca8] shadow-xl  py-10  sm:px-12 sm:py-16 lg:flex lg:items-center lg:px-16 lg:py-16">
       <div className=" max-w-[1300px] mx-auto p-6 text-center gap-3 grid grid-cols-1 justify-center items-center  md:grid-cols-2">
         <h2 className="text-darkshadegray text-center  justify-end justify-self-end md:text-nowrap md:text-2xl font-semibold">
         Compare the Best Solar Deals for Your Home

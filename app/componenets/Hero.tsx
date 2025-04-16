@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import heroBg from "@/public/images/solarlocal-hero.png";
+import heroBg from "@/public/solarmatch-hero.png";
 import solarPower from "@/public/images/icons/solarPowerSystem.svg";
 import solarandbattery from "@/public/images/icons/solarandBatteryColored.svg";
 
@@ -21,7 +21,7 @@ export default function Hero() {
         <div className="bg-darkshadegray  relative  rounded-lg mx-auto md:mx-0 sm:w-[450px] max-w-[450px]  p-6  mt-10 mb-6 md:p-8 md:rounded-md">
           <Link href="/questions">
             <div className="absolute -top-6 left-0 right-0 mx-auto   flex items-center justify-center animate-bounce-custom">
-              <div className="relative bg-gradient-to-b from-yellow-400 to-orange-400  text-white text-sm md:text-lg font-bold px-6 py-3 rounded-md shadow-md">
+              <div className="relative bg-gradient-to-b from-yellow-400 to-orange-400 text-white text-sm md:text-lg font-bold px-6 py-3 rounded-md shadow-md">
                 Start Here
                 <div className="absolute w-0 h-0 border-x-8 border-x-transparent border-t-8 border-t-[#FBB724] -bottom-2 left-1/2 transform -translate-x-1/2"></div>
               </div>

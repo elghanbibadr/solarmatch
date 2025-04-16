@@ -187,7 +187,7 @@ export default function Quiz() {
   const progress = ((currentQuestion + 1) / questions.length) * 100;
 
   return (
-    <div className="relative overflow-y-hidden rounded-md flex flex-col items-center h-[90vh] gradient-yellow">
+    <div className="relative overflow-y-hidden rounded-md flex flex-col items-center h-[90vh] bg-gradient-to-b from-[#08B7F8] to-[#036ca8] ">
       {/* Header */}
       {!displaySummary && (
         <div className="w-full flex items-center justify-between px-4 py-2">
@@ -388,7 +388,7 @@ export default function Quiz() {
                 cy="32"
                 r="28"
                 strokeWidth="4"
-                stroke="#f5c441"
+                stroke="#08B7F8"
                 fill="none"
                 strokeDasharray="176"
                 strokeDashoffset={176 - (progress / 100) * 176}

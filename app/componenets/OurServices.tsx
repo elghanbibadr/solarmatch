@@ -7,9 +7,9 @@ import Image from "next/image";
 
 const OurServices = () => {
   return (
-    <div id="services" className="bg-gradient-to-b px-4 md:px-6 from-yellow-400 to-orange-400 p-4 text-darkshadegray pt-16 py-12 rounded-2xl max-w-[1300px] my-8 mx-auto bg-backgroundPaleYellow px-6 py-10rounded-2xl max-w-[1300px] my-8 mx-auto bg-backgroundPaleYellow px-6 py-10 md:py-20">
+    <div id="services" className="bg-gradient-to-b px-4 md:px-6 bg-gradient-to-b from-[#08B7F8] to-[#036ca8] p-4 text-white pt-16 py-12 rounded-2xl max-w-[1300px] my-8 mx-auto bg-backgroundPaleYellow px-6 py-10rounded-2xl max-w-[1300px] my-8 mx-auto bg-backgroundPaleYellow px-6 py-10 md:py-20">
       <div className="max-w-[1300px] mx-auto">
-        <h2 className="mb-7 text-center">
+        <h2 className="mb-7 text-center text-white">
           How our service works
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 text-center">
@@ -21,7 +21,7 @@ const OurServices = () => {
               height={80}
               width={80}
             />
-            <h3 className="mt-3 text-[1.05rem]  leading-relaxed md:w-[80%] mx-auto tracking-tight font-medium md:text-xl md:leading-relaxed text-center md:tracking-tight text-darkshadegray">
+            <h3 className="mt-3 text-[1.05rem]   leading-relaxed md:w-[80%] mx-auto tracking-tight font-medium md:text-xl md:leading-relaxed text-center md:tracking-tight text-white">
               1. Tell Us What You Need
 
             </h3>

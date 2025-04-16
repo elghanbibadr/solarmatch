@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
-import logo from "@/public/images/SolarLocal Iconlogo.webp";
+import logo from "@/public/solar-match-logo.svg";
 import Link from "next/link";
 
 const Footer = () => {
@@ -57,7 +57,7 @@ const Footer = () => {
         </div>
       </div>
       <div
-        className={`w-full mt-10 bg-gradient-to-b from-yellow-400 to-orange-400  text-white transition-all duration-300 ${
+        className={`w-full mt-10 bg-gradient-to-b from-[#08B7F8] to-[#036ca8]  text-white transition-all duration-300 ${
           isHeroVisible ? "static " : "fixed bottom-0"
         }`}
       >

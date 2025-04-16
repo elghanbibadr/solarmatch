@@ -229,7 +229,7 @@ const SummaryForm = ({
             </div>
             <button
               type="submit"
-              className="w-full mt-6 py-2 bg-[#FFBA4A] text-white font-semibold rounded-lg  transition"
+              className="w-full mt-6 py-2 compareNowButtonGradient  text-white font-semibold rounded-lg  transition"
             >
               {!isLoading ? "Calculate my savings" : "Calculating ...."}
             </button>
