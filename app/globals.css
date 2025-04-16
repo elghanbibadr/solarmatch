@@ -1,0 +1,210 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+
+
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+
+}
+
+
+
+.hero-wrapper {
+  position: relative;
+  background-image: url("/images/hero-desktop.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    82.36deg,
+    rgba(32, 52, 81, 0.6) 9.85%,
+    rgba(42, 60, 88, 0.6) 47.74%,
+    rgba(42, 60, 88, 0) 59.76%
+  );
+  z-index: 1; /* Ensures the overlay is above the background */
+}
+
+.content {
+  position: relative;
+  z-index: 10; /* Ensures the content is above the overlay */
+}
+
+.gradient-yellow{
+  @apply bg-gradient-to-b from-yellow-400 to-orange-400;
+}
+
+
+p{
+  @apply text-textColor leading-5  md:leading-6 text-sm md:text-base
+}
+
+h2{
+  @apply font-bold text-xl md:text-[34px] text-darkshadegray leading-[120%]  tracking-[-0.01em] 
+}
+.compareNowButtonGradient {
+  @apply bg-gradient-to-b from-yellow-400 to-orange-400 text-sm block text-white  rounded-md font-bold
+}
+
+body{
+  background-color: white;
+  /* padding: 8px; */
+  position: relative;
+}
+.gradientButton{
+ background:  #df5745;
+ box-shadow: 0px 2px 4px rgba(58, 49, 72, 0.15), 0px 4px 8px rgba(58, 49, 72, 0.15), 0px 8px 16px rgba(58, 49, 72, 0.15), inset 0px 1px 0px rgba(255, 255, 255, 0.25), inset 0px -1px 0px rgba(0, 0, 0, 0.2);
+ transition: all 1s ease;
+}
+.gradientButton3{
+  background:  linear-gradient(180deg, #15A5E3 0%, rgba(21, 165, 227, 0) 100%), linear-gradient(115.5deg, #015DB3 32.3%, #01868F 100%);
+
+}
+
+.gradientButton2{
+  background:  linear-gradient(180deg, #91D15E 0%, rgba(145, 209, 94, 0) 100%), linear-gradient(115.5deg, #3F800C 32.3%, #4C990F 100%)  ;
+  box-shadow: 0px 2px 4px rgba(58, 49, 72, 0.15), 0px 4px 8px rgba(58, 49, 72, 0.15), 0px 8px 16px rgba(58, 49, 72, 0.15), inset 0px 1px 0px rgba(255, 255, 255, 0.25), inset 0px -1px 0px rgba(0, 0, 0, 0.2);
+ }
+ .gradient3{
+ background: linear-gradient(135deg, #016ACB 0%, #019EA9 100%);
+ }
+.gradient4{
+ background:  linear-gradient(180deg, rgba(1, 94, 179, 0) 81.25%, rgba(1, 94, 179, 0.08) 100%), #DCE9F5!important ;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+  select,
+  textarea,
+  input {
+    font-size: 16px;
+  }
+}
+
+.gradient5{
+  background: url("https://cvly.app/assets/local-solar-quotes/icons/House-bg.svg") right 96% no-repeat, linear-gradient(135deg, #016ACB 0%, #019EA9 100%) !important;
+}
+
+.answerBox{
+ background:  linear-gradient(202deg, rgba(21, 165, 227, 0) 6.49%, rgba(21, 165, 227, 0.12) 91.34%), #FFFFFF!important ;
+ box-shadow: 0px 2px 4px rgba(58, 49, 72, 0.15), 0px 4px 8px rgba(58, 49, 72, 0.15), 0px 8px 16px rgba(58, 49, 72, 0.15), inset 0px 1px 0px rgba(255, 255, 255, 0.25), inset 0px -1px 0px rgba(0, 0, 0, 0.2)!important;
+}
+
+.gradient6{
+ background:  linear-gradient(180deg, rgba(1, 94, 179, 0) 81.25%, rgba(1, 94, 179, 0.08) 100%), rgba(255, 255, 255, 0.7)!important
+}
+.gradient7{
+  background:  linear-gradient(180deg, rgba(223, 229, 235, 0.6) 0%, rgba(223, 229, 235, 0) 75.47%)!important
+}
+@keyframes bounce-custom {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-10px);
+  }
+  40% {
+    transform: translateY(0);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+  80% {
+    transform: translateY(0);
+  }
+}
+
+.animate-bounce-custom {
+  animation: bounce-custom 2s infinite;
+}
+
+.bg-green-500 {
+  background-color: #28a745;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.rounded-md {
+  border-radius: 0.375rem;
+}
+
+.shadow-md {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.relative {
+  position: relative;
+}
+
+.w-0 {
+  width: 0;
+}
+
+.h-0 {
+  height: 0;
+}
+
+.border-x-8 {
+  border-left-width: 8px;
+  border-right-width: 8px;
+}
+
+.border-x-transparent {
+  border-left-color: transparent;
+  border-right-color: transparent;
+}
+
+.border-t-8 {
+  border-top-width: 8px;
+}
+
+.border-t-green-500 {
+  border-top-color: #28a745;
+}
