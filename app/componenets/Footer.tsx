@@ -28,7 +28,7 @@ const Footer = () => {
         {/* Heading and Description */}
         <div className="mb-6">
           <h2 className="text-xl md:text-3xl font-bold mb-2">
-            Your trusted solar experts.
+          Find your Solar Match!
           </h2>
           <p>
             We make going solar easy with our 5-star service. See how much you

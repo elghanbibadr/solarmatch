@@ -474,7 +474,7 @@ export default function Quiz() {
                 ></div>
               </div>
               <span className="text-sm font-medium text-gray-700 mt-1 block">
-                Calculation accuracy {Math.round(progress)}%
+              Your Solar Match {Math.round(progress)}%
               </span>
             </div>
 

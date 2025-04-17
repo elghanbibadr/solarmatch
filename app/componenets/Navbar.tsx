@@ -9,7 +9,7 @@ const Navbar = () => {
     { href: "#services", label: "Services" },
     { href: "#whyUs", label: "Why us" },
     { href: "#energySavings", label: "Energy Savings" },
-    { href: "#solarEssentials", label: "Solar Essentials" },
+    { href: "#solar101", label: "Solar 101" },
   ];
 
 

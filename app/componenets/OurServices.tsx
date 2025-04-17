@@ -21,11 +21,11 @@ const OurServices = () => {
               height={80}
               width={80}
             />
-            <h3 className="mt-3 text-[1.05rem]   leading-relaxed md:w-[80%] mx-auto tracking-tight font-medium md:text-xl md:leading-relaxed text-center md:tracking-tight text-white">
+            <h3 className="mt-3 text-[1.05rem]   leading-relaxed md:w-[80%] mx-auto tracking-tight font-medium md:text-xl md:leading-relaxed text-center md:tracking-tight text-[#08B7F8]">
               1. Tell Us What You Need
 
             </h3>
-            <p className=" text-darkshadegray  mt-3">
+            <p className=" text-textColor  mt-3">
             Answer a few quick questions so we can understand your requirements.
 
 
@@ -39,11 +39,11 @@ const OurServices = () => {
               height={90}
               width={90}
             />
-            <h3 className=" text-[1.05rem]  leading-relaxed md:w-[80%] mx-auto tracking-tight font-medium md:text-xl md:leading-relaxed text-center md:tracking-tight text-[]">
+            <h3 className=" text-[1.05rem]  leading-relaxed md:w-[80%] mx-auto tracking-tight font-medium md:text-xl md:leading-relaxed text-center md:tracking-tight text-[#08B7F8]">
               2. Receive 3 Local Quotes
 
             </h3>
-            <p className=" text-darkshadegray f mt-3">
+            <p className=" text-textColor f mt-3">
             Our free service connects you with local suppliers to provide competitive quotes.
              </p>
           </div>
@@ -55,11 +55,11 @@ const OurServices = () => {
               height={90}
               width={90}
             />
-            <h3 className="mt-3 text-[1.05rem]   leading-relaxed md:w-[80%] mx-auto tracking-tight font-medium md:text-xl md:leading-relaxed text-center md:tracking-tight text-[]">
+            <h3 className="mt-3 text-[1.05rem]   leading-relaxed md:w-[80%] mx-auto tracking-tight font-medium md:text-xl md:leading-relaxed text-center md:tracking-tight  text-[#08B7F8]">
               3. Pick Your Perfect Deal
 
             </h3>
-            <p className=" text-darkshadegray  mt-3">
+            <p className=" text-textColor  mt-3">
             Once you find the best match, apply online or let us handle the setup for you.
 
 </p>

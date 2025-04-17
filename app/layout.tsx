@@ -12,10 +12,10 @@ const epilogue = Epilogue({
 });
 
 export const metadata: Metadata = {
-  title: "SolarLocal",
+  title: "(c) SolarMatch",
  
   description:
-    "Empowering Communities with Clean Energy Solutions | Optimize Solar Power for a Sustainable Future",
+    "Find your Solar Match by Comparing Obligation-Free Solar Quotes! Only takes 60 seconds to compare the best Solar Deals!",
 };
 export const viewport: Viewport = {
   initialScale: 1,
