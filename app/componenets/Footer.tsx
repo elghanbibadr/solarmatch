@@ -57,17 +57,18 @@ const Footer = () => {
         </div>
       </div>
       <div
-        className={`w-full mt-10 bg-gradient-to-b from-[#08B7F8] to-[#036ca8]  text-white transition-all duration-300 ${
-          isHeroVisible ? "static " : "fixed bottom-0"
-        }`}
+       className={`w-full mt-10 bg-gradient-to-b from-[#08B7F8] to-[#036ca8] text-white transition-all duration-300 ${
+        isHeroVisible ? "static " : "fixed bottom-0"
+      }`}
+      
       >
-        <div className=" p-6 text-center gap-3 grid grid-cols-1 justify-center items-center md:grid-cols-2">
-          <h2 className="text-darkshadegray text-center  justify-end justify-self-end md:text-nowrap md:text-2xl font-semibold">
+        <div className=" p-6 py-3  text-center gap-3  grid grid-cols-1 justify-center items-center md:grid-cols-2">
+          <h3 className="text-darkshadegray text-center  justify-end justify-self-end md:text-nowrap md:text-lg font-semibold">
             Get 3 Free Solar Quotes from Local Installers{" "}
-          </h2>
+          </h3>
           <div className=" ">
             <Link href="/questions">
-              <button className="inline-flex text-darkshadegray items-center justify-center focus-visible:outline-2 focus-visible:outline-offset-1  bg-white    text-base  gap-x-2 shrink-0    px-10 py-4 rounded-md font-medium">
+              <button className="inline-flex text-white items-center justify-center focus-visible:outline-2 focus-visible:outline-offset-1  bg-yellowCustom    text-base  gap-x-2 shrink-0    px-10 py-2 rounded-md font-medium">
               Compare Now
               </button>
             </Link>
