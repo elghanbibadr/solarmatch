@@ -2,7 +2,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import logo from "@/public/solar-match-logo.svg";
-import { ArrowRight } from "lucide-react";
 
 const Navbar = () => {
 
