@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "@/public/images/SolarLocal Iconlogo.webp";
+import logo from "@/public/solar-match-logo.svg";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -8,11 +8,11 @@ const TermsOfUse = () => {
     <div className="max-w-[1300px] mx-auto p-6">
       <div>
         <Link href="/">
-          <Image
-            className="mx-auto"
+        <Image
+            className=" mx-auto  "
             src={logo}
             alt="solar logo"
-            width={240}
+            width={140}
             height={130}
           />
         </Link>
