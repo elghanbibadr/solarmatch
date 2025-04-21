@@ -3,6 +3,7 @@ import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import logo from "@/public/solar-match-logo.svg";
 import Link from "next/link";
+import { ArrowLeft, ArrowRight } from "lucide-react";
 
 const Footer = () => {
   const [isHeroVisible, setIsHeroVisible] = useState(true);
@@ -53,7 +54,7 @@ const Footer = () => {
 
           {/* Links Section */}
 
-          <p className="text-gray-400 text-sm mt-2">© 2025 SolarLocal</p>
+          <p className="text-gray-400 text-sm mt-2">© 2025 SolarMatch</p>
         </div>
       </div>
       <div
@@ -68,8 +69,8 @@ const Footer = () => {
           </h3>
           <div className=" ">
             <Link href="/questions">
-              <button className="inline-flex text-white items-center justify-center focus-visible:outline-2 focus-visible:outline-offset-1  bg-yellowCustom    text-base  gap-x-2 shrink-0    px-10 py-2 rounded-md font-medium">
-              Compare Now
+              <button className="inline-flex  items-center justify-center focus-visible:outline-2 focus-visible:outline-offset-1  bg-white text-darkshadegray    text-base  gap-x-2 shrink-0    px-10 py-2 rounded-md font-medium">
+              Compare Now <ArrowRight className="h-[13px] w-5"/>
               </button>
             </Link>
           </div>

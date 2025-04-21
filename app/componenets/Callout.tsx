@@ -1,3 +1,4 @@
+import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 
@@ -11,7 +12,7 @@ const Callout = () => {
         <div className=" ">
             <Link href='/questions'>
               <button className="inline-flex text-darkshadegray items-center justify-center focus-visible:outline-2 focus-visible:outline-offset-1  bg-white    text-base  gap-x-2 shrink-0    px-10 py-4 rounded-md font-medium">
-                Find deals now
+                Find deals now <ArrowRight className="h-[13px] w-5"/>
               </button>
             </Link>
       </div>

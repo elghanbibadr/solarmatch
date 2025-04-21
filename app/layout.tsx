@@ -12,7 +12,7 @@ const epilogue = Epilogue({
 });
 
 export const metadata: Metadata = {
-  title: "(c) SolarMatch",
+  title: "SolarMatch",
  
   description:
     "Find your Solar Match by Comparing Obligation-Free Solar Quotes! Only takes 60 seconds to compare the best Solar Deals!",

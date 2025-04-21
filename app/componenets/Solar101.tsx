@@ -47,7 +47,7 @@ export default function Solar101() {
           .slice(0, showAll ? articles.length : 3)
           .map((article, index) => (
             <div key={index} className="">
-              <h3 className="text-base text-center md:text-lg  text-backgroundPaleYellow font-bold mb-2">
+              <h3 className="text-base text-center md:text-lg  text-black font-bold mb-2">
                 {article.title}
               </h3>
               <p className="text-textColor md:w-[80%] mx-auto text-center ">

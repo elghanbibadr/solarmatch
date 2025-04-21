@@ -21,7 +21,7 @@ const OurServices = () => {
               height={80}
               width={80}
             />
-            <h3 className="mt-3 text-[1.05rem]   leading-relaxed md:w-[80%] mx-auto tracking-tight font-medium md:text-xl md:leading-relaxed text-center md:tracking-tight text-[#08B7F8]">
+            <h3 className="mt-3 text-[1.05rem]   leading-relaxed md:w-[80%] mx-auto tracking-tight font-medium md:text-xl md:leading-relaxed text-center md:tracking-tight text-black">
               1. Tell Us What You Need
 
             </h3>
@@ -39,7 +39,7 @@ const OurServices = () => {
               height={90}
               width={90}
             />
-            <h3 className=" text-[1.05rem]  leading-relaxed md:w-[80%] mx-auto tracking-tight font-medium md:text-xl md:leading-relaxed text-center md:tracking-tight text-[#08B7F8]">
+            <h3 className=" text-[1.05rem]  leading-relaxed md:w-[80%] mx-auto tracking-tight font-medium md:text-xl md:leading-relaxed text-center md:tracking-tight text-black">
               2. Receive 3 Local Quotes
 
             </h3>
@@ -55,7 +55,7 @@ const OurServices = () => {
               height={90}
               width={90}
             />
-            <h3 className="mt-3 text-[1.05rem]   leading-relaxed md:w-[80%] mx-auto tracking-tight font-medium md:text-xl md:leading-relaxed text-center md:tracking-tight  text-[#08B7F8]">
+            <h3 className="mt-3 text-[1.05rem]   leading-relaxed md:w-[80%] mx-auto tracking-tight font-medium md:text-xl md:leading-relaxed text-center md:tracking-tight  text-black">
               3. Pick Your Perfect Deal
 
             </h3>

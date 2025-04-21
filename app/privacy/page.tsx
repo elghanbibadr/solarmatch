@@ -21,7 +21,7 @@ const PrivacyPolicy = () => {
         Privacy Policy
       </h1>
       <p className="mb-4">
-        SolarLocal  (&quot;SolarLocal,&quot; &quot;we,&quot;
+        SolarMatch  (&quot;SolarMatch,&quot; &quot;we,&quot;
         &quot;us,&quot; or &quot;our&quot;) is committed to respecting and
         protecting your privacy. This policy outlines how we collect, use, and
         safeguard your personal information in compliance with the Australian
@@ -65,10 +65,10 @@ const PrivacyPolicy = () => {
         update, or request deletion of your personal data at any time. To make
         such a request, please contact us at{" "}
         <a
-          href="mailto:solarlocal@solarlocal.com"
+          href="mailto:info@solarmatch.me "
           className="text-backgroundPaleYellow underline"
         >
-          solarlocal@solarlocal.com
+          info@solarmatch.me 
         </a>
         .
       </p>
@@ -85,11 +85,11 @@ const PrivacyPolicy = () => {
         concerns regarding the handling of your personal information, please
         contact us at
         <a
-          href="mailto:solarlocal@solarlocal.com"
+          href="mailto:info@solarmatch.me "
           className="text-backgroundPaleYellow underline"
         >
           {" "}
-          solarlocal@solarlocal.com
+          info@solarmatch.me 
         </a>
         . We take all concerns seriously and will respond promptly.
       </p>
@@ -140,10 +140,10 @@ const PrivacyPolicy = () => {
         For any privacy-related inquiries, requests, or to opt-out of
         communications, please reach out via{" "}
         <a
-          href="mailto:solarlocal@solarlocal.com"
+          href="mailto:info@solarmatch.me "
           className="text-backgroundPaleYellow underline"
         >
-          solarlocal@solarlocal.com
+          info@solarmatch.me 
         </a>
         .
       </p>

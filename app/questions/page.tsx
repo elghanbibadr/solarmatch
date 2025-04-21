@@ -5,6 +5,7 @@ import Quide2 from "@/public/images/Adobe Express - file.png";
 
 import Quiz from '../componenets/Quiz';
 import Link from 'next/link';
+import { ArrowRight } from 'lucide-react';
 
   
 const QuestionsPage = () => {
@@ -28,7 +29,7 @@ const QuestionsPage = () => {
               <h4 className='text-darkshadegray self-center text-[14px] text-wrap font-bold'>Save 85% on your power bills by installing solar</h4>
             </span>
             <button className=" bg-gradient-to-b from-[#08B7F8] to-[#036ca8] md:hidden p-2 px-3 text-xs font-medium tracking--tight text-nowrap capitalize text-white md:text-[1.1rem] md:font-semibold md:p-4 rounded-[4px]">
-              Compare Solar Now
+              Compare Solar Now <ArrowRight className="h-[13px] w-5"/>
             </button>
           </div>
         </div>

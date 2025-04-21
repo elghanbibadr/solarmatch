@@ -5,6 +5,7 @@ import step3 from "@/public/images/icons/Group-19.svg";
 import step4 from "@/public/images/icons/locationWhite.svg";
 import Image from "next/image";
 import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 
 const steps = [
   {
@@ -62,8 +63,8 @@ const WhyChoseUs = () => {
           ))}
         </div>
         <Link href="/questions">
-          <button className="compareNowButtonGradient px-10 py-4">
-            Compare Solar Now{" "}
+          <button className="compareNowButtonGradient flex items-center px-10 py-4">
+            <span>Compare Solar Now{" "}</span> <ArrowRight className="h-[13px] inline-flex w-5"/>
           </button>
         </Link>
       </div>
