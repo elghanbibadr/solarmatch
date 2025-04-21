@@ -3,7 +3,7 @@ import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import logo from "@/public/solar-match-logo.svg";
 import Link from "next/link";
-import { ArrowLeft, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 const Footer = () => {
   const [isHeroVisible, setIsHeroVisible] = useState(true);
