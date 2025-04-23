@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import logo from "@/public/solar-match-logo.svg";
+import { ArrowRight } from "lucide-react";
 
 const Navbar = () => {
 
@@ -36,7 +37,7 @@ const Navbar = () => {
       <div className="">
         <Link href="/questions">
         <button className=" bg-gradient-to-b flex items-center from-[#08B7F8] to-[#036ca8] font-medium  rounded-lg px-2 py-2 sm:px-6 text-xs md:text-sm tracking--tight text-nowrap capitalize text-white md:text-[1.1rem] md:font-semibold md:py-3  ">
-              Compare Solar Now 
+        <span>Get Quotes{" "}</span> <ArrowRight className="h-[13px] inline-flex w-5"/>
             </button>
         </Link>
       </div>

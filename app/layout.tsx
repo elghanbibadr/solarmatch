@@ -1,13 +1,13 @@
 import type { Metadata, Viewport } from "next";
-import { Epilogue } from "next/font/google";
+import {  Inter } from "next/font/google";
 import "./globals.css";
 import "aos/dist/aos.css";
 import "./globals.css"; // Your own global styles (if any)
 import AosInit from "./componenets/Aos";
 import RecaptchaProvider from "./componenets/RecaptchaProvider";
 
-const epilogue = Epilogue({
-  variable: "--font-epilogue",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
 });
 
@@ -31,7 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en" >
       <body
-        className={` ${epilogue.className} ${epilogue.variable} antialiased`}
+        className={` ${inter.className} ${inter.variable} antialiased`}
       >
         <AosInit />
         <RecaptchaProvider>

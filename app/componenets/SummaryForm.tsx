@@ -124,7 +124,7 @@ const SummaryForm = ({
       isOwner: true,
       roofType: selectedAnswers[2]?.text?.toLowerCase(),
       storeys,
-      tags: ["SL"],
+      tags: ["SMATCH"],
       comments: `energy bill: ${selectedAnswers[4]?.text?.toLowerCase()}`,
     };
 
