@@ -184,7 +184,10 @@ export default function Quiz() {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-  const progress = ((currentQuestion + 1) / questions.length) * 100;
+  const progress =
+  currentQuestion === 5 || currentQuestion === 6
+    ? 99
+    : ((currentQuestion + 1) / questions.length) * 100;
 
   return (
     <div className="relative overflow-y-hidden rounded-md flex flex-col items-center h-[90vh] bg-gradient-to-b from-[#08B7F8] to-[#036ca8] ">

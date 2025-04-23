@@ -20,6 +20,7 @@ const Navbar = () => {
       {/* Logo */}
       <Image
         src={logo}
+        className="scale-110 md:scale-125"
         alt="solar logo"
         width={120}
         height={100}
