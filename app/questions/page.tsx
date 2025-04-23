@@ -5,7 +5,6 @@ import Quide2 from "@/public/images/Adobe Express - file.png";
 
 import Quiz from '../componenets/Quiz';
 import Link from 'next/link';
-import { ArrowRight } from 'lucide-react';
 
   
 const QuestionsPage = () => {
