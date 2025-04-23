@@ -231,7 +231,7 @@ const SummaryForm = ({
               type="submit"
               className="w-full mt-6 py-2 compareNowButtonGradient  text-white font-semibold rounded-lg  transition"
             >
-              {!isLoading ? "Calculate my savings" : "Calculating ...."}
+              {!isLoading ? " Get Quotes " : "Calculating ...."}
             </button>
             <p className="text-gray-500 text-xs text-center mt-4">
               Unbiased, independent solar quotes. 100% obligation free.{" "}

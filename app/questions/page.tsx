@@ -28,9 +28,9 @@ const QuestionsPage = () => {
               <Image className='hidden w-[76px] relative top-2  transform [rotate:-4deg] [translate-y:-7px]" md:block' src={Quide2} alt='hero image' height={30} width={100} />
               <h4 className='text-darkshadegray self-center text-[14px] text-wrap font-bold'>Save 85% on your power bills by installing solar</h4>
             </span>
-            <button className=" bg-gradient-to-b from-[#08B7F8] to-[#036ca8] md:hidden p-2 px-3 text-xs font-medium tracking--tight text-nowrap capitalize text-white md:text-[1.1rem] md:font-semibold md:p-4 rounded-[4px]">
+            {/* <button className=" bg-gradient-to-b from-[#08B7F8] to-[#036ca8] md:hidden p-2 px-3 text-xs font-medium tracking--tight text-nowrap capitalize text-white md:text-[1.1rem] md:font-semibold md:p-4 rounded-[4px]">
               Compare Solar Now <ArrowRight className="h-[13px] w-5"/>
-            </button>
+            </button> */}
           </div>
         </div>
         <Quiz />

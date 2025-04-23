@@ -66,7 +66,7 @@ export const questions = [
   },
   {
     id: 5,
-    text: "Roughly how much is your power bill per quarter?",
+    text: "How much is your power bill ?",
     option1: "Less than $500",
     option2: "$500 - $1000",
     option3: "$1000 - $2000",
