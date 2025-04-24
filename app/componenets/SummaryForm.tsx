@@ -260,12 +260,11 @@ const SummaryForm = ({
         >
           <CheckCircle className="w-10 h-10 text-darkshadegray mx-auto" />
           <h2 className="text-xl font-semibold text-backgroundPaleYellow mt-2">
-            Thank you for submitting your details!
+          Thank you for your quote request!
           </h2>
           <p className="mt-2 text-darkshadegray">
-            We have successfully received your information and will connect you
-            with the highest-rated local solar companies. They will be in touch
-            with you soon to provide your free quotes.
+          The highest-rated local solar companies will be in touch soon to provide your obligation free quotes.
+
           </p>
           <Link href="/">
             <span className="text-backgroundPaleYellow cursor-pointer  text-sm block mt-4">
