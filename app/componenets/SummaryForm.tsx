@@ -266,6 +266,8 @@ const SummaryForm = ({
           The highest-rated local solar companies will be in touch soon to provide your obligation free quotes.
 
           </p>
+          {/* <!-- Offer Conversion: Private - AU - Solar Campaign --> */}
+<img src="https://x.trc85.com/aff_l?offer_id=5774" width="1" height="1" />
           <Link href="/">
             <span className="text-backgroundPaleYellow cursor-pointer  text-sm block mt-4">
               Go Back
