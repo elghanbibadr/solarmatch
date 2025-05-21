@@ -16,13 +16,13 @@ const Navbar = () => {
 
 
   return (
-    <div className="flex justify-between max-w-[1300px]  md:px-6 mx-auto items-center p-2 md:p-4">
+    <div className="flex justify-between max-w-[1300px]  md:px-6 mx-auto items-center px-2">
       {/* Logo */}
       <Image
         src={logo}
-        className="scale-110 md:scale-125"
+        className=" md:scale-125"
         alt="solar logo"
-        width={120}
+        width={100}
         height={100}
       />
       {/* Desktop Navigation */}
