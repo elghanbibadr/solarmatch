@@ -10,11 +10,13 @@ export default function Hero() {
       <div data-aos="fade-right" className="md:my-12   max-w-[1200px] mx-auto ">
         <div className="  ">
           <h1 className="text-[1.38rem]  leading-8 text-darkshadegray text-center md:text-left font-bold md:text-[2.6rem] md:leading-[1.3] md:tracking-[-0.02em]">
-            Find the Best Solar Energy <br className="hidden md:block" />
-            Deals for Your Home
+          
+            Save Up to $5,000 on Solar <br className="hidden md:block" /> & Battery Quotes
+
           </h1>
           <p className="mt-3 md:w-[80%] p-3 md:p-0 my-4 text-center md:text-left  text-textColor ">
-          We search far and wide across Australia to find you the best deals, leaving you free to choose the one that suits you perfectly that’s right for you
+      You could be eligible for up to $5,000 off with an <strong>official government rebate</strong>. We’ll check your eligibility and search trusted Aussie installers to find the best solar and battery deals for your home—fast and free.
+Compare quotes and choose the one that suits you best. No pressure. No hassle.
           </p>
         </div>
         {/* "Start Here" Button */}
