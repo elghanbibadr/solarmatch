@@ -8,7 +8,7 @@ export default function Hero() {
   return (
     <div
       id="hero"
-      className="md:grid md:grid-cols-2 my-10 gap-10 px-4 md:px-6 max-w-[1300px] mx-auto justify-center justify-items-center place-items-center "
+      className="md:grid md:grid-cols-2  gap-10 px-4 md:px-6 max-w-[1300px] mx-auto justify-center justify-items-center place-items-center "
     >
       <div data-aos="fade-right" className="md:my-12   max-w-[1200px] mx-auto ">
         <div className="  ">
