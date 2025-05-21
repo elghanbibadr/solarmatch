@@ -6,18 +6,27 @@ import solarandbattery from "@/public/images/icons/solarandBatteryColored.svg";
 
 export default function Hero() {
   return (
-    <div id="hero" className="md:grid md:grid-cols-2 my-10 gap-10 px-4 md:px-6 max-w-[1300px] mx-auto justify-center justify-items-center place-items-center ">
+    <div
+      id="hero"
+      className="md:grid md:grid-cols-2 my-10 gap-10 px-4 md:px-6 max-w-[1300px] mx-auto justify-center justify-items-center place-items-center "
+    >
       <div data-aos="fade-right" className="md:my-12   max-w-[1200px] mx-auto ">
         <div className="  ">
           <h1 className="text-[1.38rem]  leading-8 text-darkshadegray text-center md:text-left font-bold md:text-[2.6rem] md:leading-[1.3] md:tracking-[-0.02em]">
-          
-            Save Up to $5,000 on Solar <br className="hidden md:block" /> & Battery Quotes
-
+            Save Up to $5,000 on Solar <br className="hidden md:block" /> &
+            Battery Quotes
           </h1>
-          <p className="mt-3 md:w-[80%] p-3 md:p-0 my-4 text-center md:text-left  text-textColor ">
-      You could be eligible for up to $5,000 off with an <strong>official government rebate</strong>. We’ll check your eligibility and search trusted Aussie installers to find the best solar and battery deals for your home—fast and free.
- <br className="hidden md:block" />Compare quotes and choose the one that suits you best. No pressure. No hassle.
-          </p>
+      {/* Then in your component */}
+<p className="mt-3 p-3 md:p-0 my-4 text-center w-[110%] md:text-left text-textColor">
+  You could be eligible for up to $5,000 off with an{" "}
+  <strong>official government rebate</strong>. We’ll check your
+  eligibility and search trusted Aussie installers to find the best
+  solar and battery deals for your home—fast and free.
+  <br className="hidden md:block" />
+  <span className="!no-wrap-text">
+    Compare quotes and choose the one that suits you best. No pressure. No hassle.
+  </span>
+</p>
         </div>
         {/* "Start Here" Button */}
         <div className="bg-darkshadegray  relative  rounded-lg mx-auto md:mx-0 sm:w-[450px] max-w-[450px]  p-6  mt-10 mb-6 md:p-8 md:rounded-md">
