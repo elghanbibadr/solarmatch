@@ -16,7 +16,7 @@ export default function Hero() {
           </h1>
           <p className="mt-3 md:w-[80%] p-3 md:p-0 my-4 text-center md:text-left  text-textColor ">
       You could be eligible for up to $5,000 off with an <strong>official government rebate</strong>. We’ll check your eligibility and search trusted Aussie installers to find the best solar and battery deals for your home—fast and free.
-Compare quotes and choose the one that suits you best. No pressure. No hassle.
+ <br className="hidden md:block" />Compare quotes and choose the one that suits you best. No pressure. No hassle.
           </p>
         </div>
         {/* "Start Here" Button */}
