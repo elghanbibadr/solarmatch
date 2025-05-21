@@ -23,6 +23,9 @@ export default function Hero() {
   eligibility and search trusted Aussie installers to find the best
   solar and battery deals for your home—fast and free.
   <br className="hidden md:block" />
+  <br className="hidden md:block" />
+
+
   <span className="!no-wrap-text">
     Compare quotes and choose the one that suits you best. No pressure. No hassle.
   </span>
