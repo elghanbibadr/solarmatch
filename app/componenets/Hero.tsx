@@ -11,13 +11,13 @@ export default function Hero() {
       className="md:grid md:grid-cols-2  gap-10 px-4 md:px-6 max-w-[1300px] mx-auto justify-center justify-items-center place-items-center "
     >
       <div data-aos="fade-right" className="md:my-12   max-w-[1200px] mx-auto ">
-        <div className="  ">
+        <div className="  text-center ">
           <h1 className="text-[1.38rem]  leading-8 text-darkshadegray text-center md:text-left font-bold md:text-[2.6rem] md:leading-[1.3] md:tracking-[-0.02em]">
             Save Up to $5,000 on Solar <br className="hidden md:block" /> &
             Battery Quotes
           </h1>
       {/* Then in your component */}
-<p className="mt-3 p-3 md:p-0 my-4 text-center w-[110%] md:text-left text-textColor">
+<p className="mt-3 p-3 md:p-0 my-4 text-center md:w-[110%] md:text-left text-textColor">
   You could be eligible for up to $5,000 off with an official government rebate. We’ll check your eligibility and search trusted Aussie installers to find the best solar and battery deals for your home—fast and free. Compare quotes and choose the one that suits you best. No pressure. No hassle.
 
 </p>
