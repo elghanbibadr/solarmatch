@@ -18,17 +18,8 @@ export default function Hero() {
           </h1>
       {/* Then in your component */}
 <p className="mt-3 p-3 md:p-0 my-4 text-center w-[110%] md:text-left text-textColor">
-  You could be eligible for up to $5,000 off with an{" "}
-  <strong>official government rebate</strong>. We’ll check your
-  eligibility and search trusted Aussie installers to find the best
-  solar and battery deals for your home—fast and free.
-  <br className="hidden md:block" />
-  <br className="hidden md:block" />
+  You could be eligible for up to $5,000 off with an official government rebate. We’ll check your eligibility and search trusted Aussie installers to find the best solar and battery deals for your home—fast and free. Compare quotes and choose the one that suits you best. No pressure. No hassle.
 
-
-  <span className="!no-wrap-text">
-    Compare quotes and choose the one that suits you best. No pressure. No hassle.
-  </span>
 </p>
         </div>
         {/* "Start Here" Button */}
