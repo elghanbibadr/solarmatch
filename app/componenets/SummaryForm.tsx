@@ -12,18 +12,7 @@ import Link from "next/link";
 import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 import { ArrowLeft } from "lucide-react";
 
-const ConversionPixel = () => {
-  const hasTracked = useRef(false);
 
-  useEffect(() => {
-    if (!hasTracked.current) {
-      hasTracked.current = true;
-      // Pixel will load here only once
-    }
-  }, []);
-
-  return <img src="https://x.trc85.com/aff_l?offer_id=5774" width="1" height="1" alt="" />;
-};
 const SummaryForm = ({
   selectedAnswers,
   fullAdressInfo,
@@ -317,6 +306,19 @@ const SummaryForm = ({
       )}
     </div>
   );
+};
+
+const ConversionPixel = () => {
+  const hasTracked = useRef(false);
+
+  useEffect(() => {
+    if (!hasTracked.current) {
+      hasTracked.current = true;
+      // Pixel will load here only once
+    }
+  }, []);
+
+  return <img src="https://x.trc85.com/aff_l?offer_id=5774" width="1" height="1" alt="" />;
 };
 
 export default SummaryForm;
