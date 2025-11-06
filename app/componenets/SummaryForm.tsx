@@ -1,4 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
+import { useState, useEffect, useRef } from "react";
 
 "use client";
 import { CheckCircle } from "lucide-react";
@@ -10,6 +11,18 @@ import Link from "next/link";
 import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 import { ArrowLeft } from "lucide-react";
 
+const ConversionPixel = () => {
+  const hasTracked = useRef(false);
+
+  useEffect(() => {
+    if (!hasTracked.current) {
+      hasTracked.current = true;
+      // Pixel will load here only once
+    }
+  }, []);
+
+  return <img src="https://x.trc85.com/aff_l?offer_id=5774" width="1" height="1" alt="" />;
+};
 const SummaryForm = ({
   selectedAnswers,
   fullAdressInfo,
@@ -30,6 +43,7 @@ const SummaryForm = ({
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState("");
   const [isPhoneValid, setIsPhoneValid] = useState(true);
+  const hasTrackedConversion = useRef(false);  // ADD THIS LINE
   const {
     country,
     state,
@@ -61,40 +75,51 @@ const SummaryForm = ({
   if (selectedAnswers[5].text === "Yes") {
     leads.push("RSHW");
   }
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!executeRecaptcha) return;
+ const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
 
-    try {
-      const token = await executeRecaptcha("form_submit");
+  // Prevent multiple submissions
+  if (isLoading) return;
 
-      const recaptchaResponse = await fetch("/api/verifyRecaptcha", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ token }),
-      });
+  if (!executeRecaptcha) return;
 
-      if (!recaptchaResponse.ok) {
-        alert("Error in validation");
-        return;
-      }
+  // Set loading immediately before any async operations
+  setIsLoading(true);
 
-      const data = await recaptchaResponse.json();
+  try {
+    const token = await executeRecaptcha("form_submit");
 
-      if (!data?.success) {
-        setError(
-          "there was an error processing your request try again later !"
-        );
-        return;
-      }
-    } catch (error) {
-      console.error("Recaptcha Error:", error);
+    const recaptchaResponse = await fetch("/api/verifyRecaptcha", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ token }),
+    });
+
+    if (!recaptchaResponse.ok) {
+      alert("Error in validation");
+      setIsLoading(false);
       return;
     }
 
-    setIsLoading(true);
+    const data = await recaptchaResponse.json();
 
-    if (!isPhoneValid) return;
+    if (!data?.success) {
+      setError(
+        "there was an error processing your request try again later !"
+      );
+      setIsLoading(false);
+      return;
+    }
+  } catch (error) {
+    console.error("Recaptcha Error:", error);
+    setIsLoading(false);
+    return;
+  }
+
+  if (!isPhoneValid) {
+    setIsLoading(false);
+    return;
+  }
 
     const contact = {
       firstName: formData.firstName,
@@ -227,12 +252,14 @@ const SummaryForm = ({
                 </p>
               )}
             </div>
-            <button
-              type="submit"
-              className="w-full mt-6 py-2 compareNowButtonGradient  text-white font-semibold rounded-lg  transition"
-            >
-              {!isLoading ? " Get Quotes " : "Calculating ...."}
-            </button>
+         <button
+  type="submit"
+  disabled={isLoading}
+  className="w-full mt-6 py-2 compareNowButtonGradient text-white font-semibold rounded-lg transition disabled:opacity-50 disabled:cursor-not-allowed"
+>
+  {!isLoading ? " Get Quotes " : "Calculating ...."}
+</button>
+
             <p className="text-gray-500 text-xs text-center mt-4">
               Unbiased, independent solar quotes. 100% obligation free.{" "}
             </p>
@@ -253,28 +280,28 @@ const SummaryForm = ({
         </div>
       )}
 
-      {formSuccessfullySubmited && (
-        <div
-          data-aos="fade-up"
-          className="bg-white p-6   rounded-lg shadow-md text-center max-w-lg mt-20 w-fit mx-4 "
-        >
-          <CheckCircle className="w-10 h-10 text-darkshadegray mx-auto" />
-          <h2 className="text-xl font-semibold text-backgroundPaleYellow mt-2">
-          Thank you for your quote request!
-          </h2>
-          <p className="mt-2 text-darkshadegray">
-          The highest-rated local solar companies will be in touch soon to provide your obligation free quotes.
+    {formSuccessfullySubmited && (
+  <div
+    data-aos="fade-up"
+    className="bg-white p-6   rounded-lg shadow-md text-center max-w-lg mt-20 w-fit mx-4 "
+  >
+    <CheckCircle className="w-10 h-10 text-darkshadegray mx-auto" />
+    <h2 className="text-xl font-semibold text-backgroundPaleYellow mt-2">
+    Thank you for your quote request!
+    </h2>
+    <p className="mt-2 text-darkshadegray">
+    The highest-rated local solar companies will be in touch soon to provide your obligation free quotes.
 
-          </p>
-          {/* <!-- Offer Conversion: Private - AU - Solar Campaign --> */}
-<img src="https://x.trc85.com/aff_l?offer_id=5774" width="1" height="1" />
-          <Link href="/">
-            <span className="text-backgroundPaleYellow cursor-pointer  text-sm block mt-4">
-              Go Back
-            </span>
-          </Link>
-        </div>
-      )}
+    </p>
+    {/* <!-- Offer Conversion: Private - AU - Solar Campaign --> */}
+    <ConversionPixel />
+    <Link href="/">
+      <span className="text-backgroundPaleYellow cursor-pointer  text-sm block mt-4">
+        Go Back
+      </span>
+    </Link>
+  </div>
+)}
       {error && !isLoading && (
         <div className="bg-white p-6 text-red-500  rounded-lg shadow-md text-center max-w-lg mt-14 w-fit mx-4 ">
           <h3>{error}</h3>
