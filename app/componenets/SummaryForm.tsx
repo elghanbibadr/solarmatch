@@ -33,7 +33,6 @@ const SummaryForm = ({
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState("");
   const [isPhoneValid, setIsPhoneValid] = useState(true);
-  const hasTrackedConversion = useRef(false);  // ADD THIS LINE
   const {
     country,
     state,
