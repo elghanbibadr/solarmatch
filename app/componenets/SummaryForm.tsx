@@ -1,7 +1,8 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
+"use client";
+
 import { useState, useEffect, useRef } from "react";
 
-"use client";
 import { CheckCircle } from "lucide-react";
 import { useState } from "react";
 import locationIcon from "@/public/images/icons/Location.svg";
