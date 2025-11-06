@@ -4,7 +4,7 @@
 import { useState, useEffect, useRef } from "react";
 
 import { CheckCircle } from "lucide-react";
-import { useState } from "react";
+
 import locationIcon from "@/public/images/icons/Location.svg";
 import Image from "next/image";
 import axios from "axios";
